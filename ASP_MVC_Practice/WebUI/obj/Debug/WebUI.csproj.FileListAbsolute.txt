@@ -50,6 +50,5 @@ C:\Users\CUGCC\Desktop\Work\دورات\ASP.Net دورة\ASP-MVC-Practice\ASP_MVC
 C:\Users\CUGCC\Desktop\Work\دورات\ASP.Net دورة\ASP-MVC-Practice\ASP_MVC_Practice\WebUI\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\CUGCC\Desktop\Work\دورات\ASP.Net دورة\ASP-MVC-Practice\ASP_MVC_Practice\WebUI\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\CUGCC\Desktop\Work\دورات\ASP.Net دورة\ASP-MVC-Practice\ASP_MVC_Practice\WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\CUGCC\Desktop\Work\دورات\ASP.Net دورة\ASP-MVC-Practice\ASP_MVC_Practice\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 C:\Users\CUGCC\Desktop\Work\دورات\ASP.Net دورة\ASP-MVC-Practice\ASP_MVC_Practice\WebUI\obj\Debug\WebUI.dll
 C:\Users\CUGCC\Desktop\Work\دورات\ASP.Net دورة\ASP-MVC-Practice\ASP_MVC_Practice\WebUI\obj\Debug\WebUI.pdb
