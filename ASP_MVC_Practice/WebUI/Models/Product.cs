@@ -7,7 +7,7 @@ namespace WebUI.Models
 {
     public class Product
     {
-        public int Id { set; get; }
+        public string Id { set; get; }
         public string Name { set; get; }
         public string Category { set; get; }
         public decimal Price { set; get; }

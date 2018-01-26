@@ -33,11 +33,23 @@ namespace WebUI.Controllers
         }
         public ActionResult AddProduct(Product product)
         {
+            product.Id = Guid.NewGuid().ToString();
             products.Add(product);
-            comit();
+            commit();
             return RedirectToAction("Index");
         }
-        public void comit()
+        public ActionResult DeleteProductPage(string id)
+        {
+            Product productToDelete = products.Find(n => n.Id == id);
+            return View(productToDelete);
+        }
+        public ActionResult DeleteProduct(Product product)
+        {
+            products.Remove(product);
+            commit();
+            return RedirectToAction("Index");
+        }
+        public void commit()
         {
             Cache["products"] = products;
         }
