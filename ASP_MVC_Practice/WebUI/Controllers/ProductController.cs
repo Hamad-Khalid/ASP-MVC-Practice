@@ -43,6 +43,7 @@ namespace WebUI.Controllers
             Product productToDelete = products.Find(n => n.Id == id);
             return View(productToDelete);
         }
+        [HttpPost]
         public ActionResult DeleteProduct(Product product)
         {
             products.Remove(product);
