@@ -43,12 +43,13 @@ namespace WebUI.Controllers
             Product productToDelete = products.Find(n => n.Id == id);
             return View(productToDelete);
         }
-        [HttpPost]
-        public ActionResult DeleteProduct(Product product)
+        public ActionResult DeleteProduct(string id)
         {
-            products.Remove(product);
+            Product productToDelete = products.Find(n => n.Id == id);
+            products.Remove(productToDelete);
             commit();
-            return RedirectToAction("Index");
+            //return RedirectToAction("Index");
+            return View();
         }
         public void commit()
         {

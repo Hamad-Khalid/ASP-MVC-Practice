@@ -222,6 +222,7 @@
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Product\AddProductPage.cshtml" />
     <Content Include="Views\Product\DeleteProductPage.cshtml" />
+    <Content Include="Views\Product\DeleteProduct.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

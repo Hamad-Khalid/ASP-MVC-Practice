@@ -3,12 +3,9 @@
     ViewBag.Title = "Delete Product";
 }
 <h2>Delete Product</h2>
-@using (Html.BeginForm("DeleteProduct", "Product",FormMethod.Post))
+@using (Html.BeginForm("DeleteProduct", "Product", FormMethod.Post))
 {
     <input type="hidden" Name="Id" value="@Model.Id" />
-    <input type="hidden" Name="Name" value="@Model.Name" />
-    <input type="hidden" Name="Category" value="@Model.Category" />
-    <input type="hidden" Name="Price" value="@Model.Price" />
     <dl>
         <dt>@Model.Name</dt>
         <dd>Do you want to delete this product?<input type="submit" value="Proceed" /></dd>
