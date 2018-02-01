@@ -18,8 +18,9 @@
             @Html.DisplayNameFor(model => model.Price)
         </th>
         <th>
-            Delete Product
+            
         </th>
+
     </tr>
 
 @foreach (var item in Model) {
@@ -34,7 +35,9 @@
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            <a href="DeleteProductPage?id=@item.Id">Delete</a>
+            <a href="/Product/DeleteProductPage?id=@item.Id">Delete</a>
+            &nbsp;&nbsp;
+            <a href="/Product/UpdateProductPage?id=@item.Id">Update</a>
         </td>
     </tr>
 }

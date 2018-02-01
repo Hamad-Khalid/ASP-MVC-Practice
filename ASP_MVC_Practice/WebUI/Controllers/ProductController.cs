@@ -38,6 +38,20 @@ namespace WebUI.Controllers
             commit();
             return RedirectToAction("Index");
         }
+        public ActionResult UpdateProductPage(string id)
+        {
+            Product productToUpdate = products.Find(n => n.Id == id);
+            return View(productToUpdate);
+
+        }
+        public ActionResult UpdateProduct(Product product)
+        {
+            Product productToUpdate = products.Find(n => n.Id == product.Id);
+            productToUpdate = product;
+            commit();
+            return RedirectToAction("Index");
+
+        }
         public ActionResult DeleteProductPage(string id)
         {
             Product productToDelete = products.Find(n => n.Id == id);

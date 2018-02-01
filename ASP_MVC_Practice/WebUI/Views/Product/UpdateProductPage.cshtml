@@ -1,0 +1,18 @@
+﻿@model WebUI.Models.Product
+
+@{
+    ViewBag.Title = "Update Product Page";
+}
+
+<h2>Update Product Page</h2>
+
+@{Html.BeginForm("UpdateProduct", "Product", FormMethod.Post);}
+
+<input type="hidden" name="Id"value="@Model.Id" />
+Name:&nbsp;&nbsp;&nbsp;<input type="text" name="Name" /><br />
+Category:&nbsp;&nbsp;&nbsp;<input type="text" name="Category" /><br />
+Price:&nbsp;&nbsp;&nbsp;<input type="text" name="Price" /><br />
+<br />
+<input type="submit" value="Update" />
+
+@{Html.EndForm();}
