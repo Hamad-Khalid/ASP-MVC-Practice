@@ -47,7 +47,9 @@ namespace WebUI.Controllers
         public ActionResult UpdateProduct(Product product)
         {
             Product productToUpdate = products.Find(n => n.Id == product.Id);
-            productToUpdate = product;
+            productToUpdate.Name = product.Name;
+            productToUpdate.Category = product.Category;
+            productToUpdate.Price = product.Price;
             commit();
             return RedirectToAction("Index");
 
